@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar&family=Barlow+Semi+Condensed:wght@500;600&family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main {
+  max-width: 650px;
+  text-align: center;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--gray);
+  font-weight: 300;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+h2 {
+  font-weight: 300;
+  color: var(--very-dark-blue);
+}
+
+form {
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+form small {
+  color: var(--light-red);
+  display: none;
+  font-style: italic;
+  z-index: 100;
+  margin: 0px 20px 40px;
+}
+
+.form-left {
+  flex: 0.7;
+}
+
+input {
+  border: 1px solid var(--pale-blue);
+  border-radius: 50px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 20px 25px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: hsl(0, 4%, 80%);
+}
+
+input.error {
+  border-color: var(--light-red);
+}
+
+input.error::placeholder {
+  color: var(--light-red);
+}
+
+button {
+  font-family: "Libre Franklin", sans-serif;
+  border: none;
+  color: #fff;
+  background-color: var(--blue);
+  font-size: 16px;
+  border-radius: 50px;
+  box-shadow: 0 5px 5px var(--pale-blue);
+  padding: 20px 0;
+  cursor: pointer;
+  font-weight: 600;
+  flex: 0.3;
+  margin-left: 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.illustration {
+  max-width: 100%;
+  margin: 60px 0;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 10px;
+}
+
+.social-links li a {
+  font-size: 18px;
+  border: 1px solid hsl(0, 14%, 88%);
+  color: var(--blue);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.social-links li a:hover {
+  background-color: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+
+footer p {
+  color: var(--gray);
+}
+
+@media screen and (max-width: 650px) {
+  form {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-left {
+    width: 100%;
+  }
+
+  button {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
