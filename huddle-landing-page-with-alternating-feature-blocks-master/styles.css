@@ -20,3 +20,21 @@ h1,
 h2 {
   font-family: "Poppins", sans-serif;
 }
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image: url("./images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+  background-color: var(--very-pale-cyan);
+}
